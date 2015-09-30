@@ -17,26 +17,30 @@
 		var input = $("#city-type").val();
 		var city = input.toLowerCase();
 		console.log(city);
+		
+		switch (city) {
+			case "new york":
+				changeImage(3);
+				break;
+			case "san francisco":
+				changeImage(4);
+				break;
+			case "los angeles":
+				changeImage(2);
+				break;
+			case "austin":
+				changeImage(0);
+				break;
+			case "sydney":
+				changeImage(5);
+				break;
+			case "select a city":
+				changeImage(1);
+				break;	
 
-		if (city === "new york") {
-			changeImage(3);
-		} else if (city === "san francisco"){
-			changeImage(4);
-		} else if (city === "los angeles"){
-			changeImage(2);
-		} else if (city === "austin"){
-			changeImage(0);
-		} else if (city === "sydney"){
-			changeImage(5);
-		} else {
-			changeImage(1);
-		}
-
-
-		return false;
+			return false;	
+		} 
 	}
-
-
 
 
 
