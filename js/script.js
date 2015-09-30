@@ -18,15 +18,15 @@
 		var city = input.toLowerCase();
 		console.log(city);
 
-		if (city === "new york" || city === "new york city" || city === "nyc") {
+		if (city === "new york") {
 			changeImage(3);
-		} else if (city === "san francisco" || city === "sf" || city === "bay area"){
+		} else if (city === "san francisco"){
 			changeImage(4);
-		} else if (city === "los angeles" || city === "la" || city === "lax"){
+		} else if (city === "los angeles"){
 			changeImage(2);
-		} else if (city === "austin" || city === "atx"){
+		} else if (city === "austin"){
 			changeImage(0);
-		} else if (city === "sydney" || city === "syd"){
+		} else if (city === "sydney"){
 			changeImage(5);
 		} else {
 			changeImage(1);
@@ -35,6 +35,8 @@
 
 		return false;
 	}
+
+
 
 
 
